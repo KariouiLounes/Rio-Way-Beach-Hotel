@@ -1,6 +1,6 @@
 # Rio-Way-Beach-Hotel
 
-<h2>Overvieww</h2>
+<h2>Overview</h2>
 
 Welcome to the README for the Rio Surf Haven website! This project represents a personal endeavor where I designed and coded the homepage of a responsive website for a surf-themed hotel/pousada located in Rio de Janeiro. This site is my first fully coded project, completed approximately a year ago, using HTML, CSS, and JavaScript. The absence of frameworks or content management systems (CMS) underscores the project’s authenticity and serves as a testament to my coding skills and growth over the past year.
 
