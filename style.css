@@ -1,0 +1,840 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+ p{
+    line-height:25px;
+    color: #a3a3a3;
+ }
+    /*--------------------------------Nav bar---------------------------------------*/
+
+header{
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+header nav ul {
+   
+    display: flex;
+    list-style: none;  
+    width: 75%;
+    justify-content: space-evenly;
+}
+nav{
+    display: flex;
+    width: 100% ;
+    padding-top: 12px;
+}
+.logo{
+  padding-top: 5px;
+  margin-left: 35px;
+  
+
+}
+.areserver{
+    display: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-family: 'Anton', sans empattement ;
+    color: #fff;
+    letter-spacing: 3px;   
+}
+header nav ul li a::after{
+    content: '';
+    width: 0; 
+    left: 0;
+    height: 5px;
+    background-color:#00aeff;
+    display: block;
+    transition: 0.5s;  
+}
+
+header nav ul li a:hover::after{
+    width: 100%;  
+}
+
+/*-------------------------------------Btn reserver nav---------------------------------------*/
+.btn-Reserver{
+    position: relative;
+    display: block;
+    border: 3px solid #fff;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #00aeff;
+    overflow: hidden;
+    font-family: 'Anton', sans empattement ;
+    
+}
+
+.btn-Reserver span{
+    padding-right: 10%;
+}
+.btn-Reserver:hover span{
+    color: #fff;
+}
+
+.btn-Reserver .wave {
+
+position: absolute;
+top: calc(100% + 22px);
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #00aeff;
+transition: 1.5s;
+}
+
+.btn-Reserver:hover .wave{
+    top: 0;
+}
+
+
+.btn-Reserver .wave:before {
+    content:'';
+    position: absolute;
+    top:-22px;
+    left:0;
+    width: 100%;
+    height: 22px;
+    background: url(wave.png);
+    animation: animate 0.5s linear infinite;
+
+}
+.btn1{
+    padding: 6px 18px;
+    margin: auto 20px;
+
+}
+
+@keyframes animate
+{
+    0%
+    { 
+        background-position-x: 0;
+    }
+    100%
+    {
+           background-position-x: 118px;
+         
+    }
+}
+
+.menu-hamburger{
+    display: none;
+}
+
+/*  -------------------------------Title h1 et Img surfer ------------------  */
+.premiereimagewrapp{
+ width: 100%;
+ height: 800px;
+ display: flex;
+
+}
+.premiereimagewrapp img{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+.titreDeBienvenue{
+    position: absolute;
+    color: #fff;
+    font-weight: lighter;
+    font-family: 'Anton', sans empattement ;
+    z-index: 0;
+    font-size: 75px;
+    left: 50px;
+    letter-spacing: 15px;
+    top: 280px;
+    }
+    .Rio{
+        color:rgb(255,255,0);
+        font-size: 100px;
+        
+    }
+    .WAY{
+        color:rgb(245,235,216);
+        
+    }
+    
+    
+    .BEACH{
+        color: #00aeff;
+        font-weight: bold;
+        font-size: 110px;
+    }
+    .titreDeBienvenue::after{
+        content: '';
+        width: 150px; 
+        height: 5px;
+        background-color:rgb(255,255,0);
+        display: block;
+        margin-left: 70px;
+    
+    }
+    .separation{
+        padding-top: 40px;
+    }
+
+/* --------------------------------------Carousel------------------------------------*/
+
+
+
+.sliderwrapp{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+
+  
+.slider{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn{
+    border: 1px solid #00aeff;
+    padding:3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #00aeff  ;
+}
+.manual-btn:hover{
+    background:#00aeff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+/* ---------------CSS navigation auto--------------*/ 
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 570px;
+}
+
+.navigation-auto div{
+    border: 1px solid #00aeff;
+    padding:  3px;
+    border-radius: 10px;
+    transition: 1s;
+    
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #00aeff;
+
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #00aeff;
+
+}
+
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #00aeff;
+
+}
+
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #00aeff;
+
+}
+
+
+
+/*---------------------------------------Slider End -------------------------------------*/
+
+
+.bodyPage{
+    padding: 2rem 5rem;  
+}
+.whatsapp{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    font-size: 13px;
+    margin: 0;
+}
+.fa-whatsapp{
+    color: green;
+    padding-top: 3px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Anton', sans empattement ;
+    font-weight: 100;
+    letter-spacing: 8px;
+    
+}
+.imgsurfer{
+    height: 100px;
+    width: 100px;
+}
+.divsurfer{
+    text-align: center  ;
+}
+.paragrapheDeBienvenue{
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 20px;
+    margin: 0 30px;
+}
+
+.presentation{
+    padding: 25px 2Rem;
+    display: flex;
+    
+}
+.deux-images{
+    display: flex;
+    width: 100%;
+    gap:10px;
+    padding-top:15px;
+    
+}
+.deux-images img{
+    width: 50%;
+    
+  
+}
+.gonzalo{
+    object-fit: cover;
+    width: 50%;
+}
+.titrePresentation::after{
+        content: '';
+        width: 7rem; 
+        height: 3px;
+        background-color:rgb(255,255,0);
+        display: block;
+        margin: 1rem auto;
+      
+            
+}
+.RIO1{
+    color: rgb(255,255,0);
+}
+.WAY1{
+    color:rgb(245,235,216) ;
+}
+
+.BEACH1{
+    color:#00aeff ;
+}
+.SURF{
+    margin: 0;
+    padding: 25px 0;
+    
+}
+.CHILL{
+    margin: 0;
+    padding: 25px 0;
+}
+.SURF:after{
+    content: '';
+    width: 4rem; 
+    height: 3px;
+    background-color:#00aeff;
+    display: block;
+    margin: 4px auto;
+}
+  
+.CHILL:after{
+    content: '';
+    width: 4rem; 
+    height: 3px;
+    background-color:rgb(245,235,216);
+    display: block;
+    margin: 4px auto;
+}
+.decouvrer::after{
+    content: '';
+    width: 6rem; 
+    height: 3px;
+    background-color:rgb(245,235,216);
+    display: block;
+    margin: 1rem auto;
+
+}
+.surfPresentation{
+    column-count: 2;
+    flex-wrap: wrap;
+    padding:3px 50px;
+}
+
+.surfPresentation p{
+    letter-spacing: 1px;
+    padding-right: 15px;
+    
+}
+
+.decouvrer{
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.pbe{
+    padding-top: 4rem;
+    margin:0;
+}
+
+.pbe:after{
+    content: '';
+    width: 6rem; 
+    height: 3px;
+    background-color:yellow;
+    display: block;
+    margin: 1rem auto;
+}
+
+.boutonHebergement{
+    position: absolute;
+
+}
+
+.activitewrap{
+    display: flex;
+    width: 100%;
+    
+}
+.cardwrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 2rem 15px;
+   
+
+}
+.activiteimgwrap{
+    width: 100%;
+}
+.activiteimgwrap img:hover{
+ opacity: 60%;
+ cursor: pointer;
+}
+
+.activiteimgwrap img{
+    object-fit: cover;
+    width: 100%;
+    height: 550px;
+    transition: 2s;
+}
+
+
+.activiteTitle{
+    margin: 1rem 0 ;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: 'Anton', sans empattement ;
+
+}
+
+.activiteTitle::after{
+    content:'';
+    width: 7rem; 
+    height: 3px;
+    background-color:rgb(255,255,0);
+    display: block;
+    margin: 1rem auto;
+
+}
+
+
+.petitDejeuner::after{
+        content: '';
+            width: 7rem; 
+            height: 4px;
+            background-color:rgb(255,255,0);
+            display: block;
+            margin: 1rem auto;
+
+}
+.separation2{
+    background-color: rgb(240,240,240);
+}
+.petitDejeunerPresentation{
+    margin: 2rem ;
+}
+.titrePetitDejeuner{
+    padding-top:2rem; 
+}
+.titrePetitDejeuner::after{
+    content: '';
+    width: 7rem; 
+    height: 3px;
+    background-color:#00aeff;
+    display: block;
+    margin: 1rem auto;
+}
+.petitDejwrap{
+    display: flex;
+    margin: 2rem;
+    gap: 10px;
+    height: 350px;
+    
+}
+.petitdejimg{
+    object-fit: cover;
+    height: 450px;
+    margin: auto    ;
+    width: 100%;
+    
+}
+.paragraphepetitdej{
+   
+    margin: 4rem;
+}
+
+
+
+/*------------------------------------------------------footer-------------------------------------------------*/
+
+
+
+footer{
+    display: flex;
+    background-image: url("./image/footerimg.jpg");
+    margin: 0;
+    padding: 0; 
+    font-family: 'Anton', sans empattement ;
+    letter-spacing: 2px;   
+}
+
+
+footer ul{
+    list-style: none;
+    padding-right: 20px;
+}
+.contactezNous{
+    display: flex;
+    flex-wrap: wrap;
+}
+.titreContact{
+    margin-left: 40px;
+}
+
+
+.footerLocalisation {
+    color: #fff; 
+    line-height: 40px;
+    font-size: 15px;
+    margin: auto;
+    padding-right: 25px;
+  
+
+}
+
+
+.footerLocalisation a{
+text-decoration: none;
+color:white;
+transition: 1s;
+}
+.footerLocalisation a:hover{
+    color: #00aeff;
+    
+}
+
+
+.home a:hover{
+   color: #00aeff;
+   transition: 0.5s;
+
+}
+
+
+.footerLocalisation i{
+    padding-right: 10px;
+}
+
+.footerMenu {
+    margin: auto;
+
+}
+
+.footerMenu a {
+    list-style: none;
+    text-decoration: none;
+    color: white       ;
+    line-height: 40px;
+   
+}
+
+.white:hover{
+    color: black;
+}
+
+
+.barreVertical{
+	clear: both;
+	margin: 20px 100px;
+	height: 200px;
+	width : 1px;
+	background: white;
+	}
+
+    .whatsappBlanc i{
+        color:#33c662;
+    }
+  
+    .icones{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .icones i {
+        padding-top: 20px;
+        color: white;
+        
+    }
+    
+.instagram i:hover{
+color: #d6249f;
+transition: 1s; }
+
+.facebook i:hover {
+color: blue;
+transition: 1s;
+}
+
+.whatsappBlanc i:hover{
+    color: rgb(16, 255, 16);
+    transition: 1s;
+
+}
+                             /* Responsive du site */
+
+@media screen and (max-width: 980px){
+
+     /* Responsive nav bar */
+
+    header nav ul{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        
+        
+    }
+  
+   .btn1, .btn-Reserver{
+    display: none;
+}
+
+
+  nav{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.20);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(7px);
+    margin-left: -100%;
+    transition: all 0.5s ease;
+}
+.mobile-menu{
+    margin: 0;
+    
+}
+   header{
+    overflow: visible;
+    justify-content: flex-start;
+   }
+   nav ul li{
+    font-size: 20px;
+   }
+.menu-hamburger{
+    display: block;
+    height: 25px;
+    position: absolute;
+    top: 30px;
+    right:25px;
+    cursor: pointer;
+}
+.areserver{
+    display: flex;
+}
+
+ /* Responsive du section H1 et image de fond*/
+
+.titreDeBienvenue{
+    font-size: 40px;
+    top:270px;
+   
+}
+.Rio, .WAY, .BEACH {
+    font-size: 80px;
+}
+.titreDeBienvenue::after{
+    width: 100px;
+}
+.activiteimgwrap img{  
+  
+    height: 450px;
+    
+}
+body{
+    font-size: 15px;
+    }
+
+.presentation{
+    flex-wrap: wrap;
+}
+.gonzalo{
+    width: 100%;
+}
+.paragrapheDeBienvenue{
+    margin: 5px;
+}
+.titrePresentation{
+    font-size: 16px;
+}
+.surfPresentation{
+    column-count: 1;
+}
+header{
+    background: rgba(0, 0, 0, 0);
+}
+.paragraphepetitdej{
+    margin-bottom: 1rem;
+}
+
+
+}
+
+@media screen and (max-width: 730px){
+.activitewrap{
+    flex-wrap: wrap;
+}
+.cardwrap{
+    width: 100%;
+}
+
+}
+@media screen and (max-width: 610px){
+    .bodyPage{
+       padding: 0;
+    }
+    .presentation{
+        padding: 0 1rem;
+    }
+    .activiteimgwrap{  
+        width: 100%;
+        height: 500px;
+        justify-content: center;
+        
+    }
+    .pbe{
+        font-size: 20px;
+    }
+    .decouvrer{
+        font-size: 20px;
+    }
+    body{
+    font-size: 15px;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .footerMenu{
+        margin-left: 0;
+      
+    }
+    .icones{
+        margin: auto 45px;
+    }
+    .imgsurfer{
+        padding-bottom: 25px;
+    }
+    .paragraphepetitdej {
+        margin: 1rem;
+
+}}

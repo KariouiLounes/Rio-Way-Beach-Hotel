@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+
+<header>
+   <a href="index.html"><img class="logo" src="logo/logoRioWayBeach.png" height="90px" alt="Logo de l'hôtel"></a>
+
+        <nav>
+            <ul>
+                <li> <a href ="#">HEBERGEMENT</a></li>
+                <li><a href = "#">EQUIPE</a></li>
+                <li><a href = "#">A VISITER</a></li>
+                <li><a href = "#">PETIT DEJEUNER</a></li>
+                <li><a href = "#">CONTACTER</a></li>
+                <li class="areserver"><a href = "https://www.booking.com/hotel/br/rio-way.pt-br.html">RESERVER</a></li>
+ 
+            </ul> 
+        <a class="btn1 btn-Reserver" href="https://www.booking.com/hotel/br/rio-way.pt-br.html" target="_blank">
+            <span >RESERVER</span>
+            <div class="wave"></div>
+        </a>
+      </nav>
+      <img class="menu-hamburger"src="./image/menu-hamburger.png" alt="menu menu-hamburger">
+      <script>
+         const menuHamburger = document.querySelector(".menu-hamburger")
+         const navLinks = document.querySelector("nav")
+  
+         menuHamburger.addEventListener('click',()=>{
+         navLinks.classList.toggle('mobile-menu')
+         })
+ </script>
+</header>
+                       <!-- Image du surfer et titre de presentation -->
+
+ <div class="premiereimagewrapp">
+    <h1 class="titreDeBienvenue"> BEM VINDO AO <br>  <span class= "Rio">RIO  <span class= "WAY"> WAY <br></span> <span class ="BEACH"> BEACH</span>
+    </h1>
+    <img src="/image/Leonnysurf2.jpeg">
+ </div>
+
+                        <!--------Surf et chill paragraphe------->
+
+       <div class="separation"></div>
+
+    <div class="bodyPage">
+      <h2 class="titrePresentation"> OFFREZ-VOUS UN SEJOUR AU <span class= "RIO1">RIO</span>
+        <span class="WAY1"> WAY</span>  <span class="BEACH1"> BEACH</span></h2>
+        <div class="presentation">
+         
+        
+         <img class="gonzalo" src="https://cf2.bstatic.com/xdata/images/hotel/max1280x900/217648609.jpg?k=90defa9874ceff461357a15b7ad998eb494910280c5b874833b08dc37449f270&o=&hp=1" alt="sandwitch">
+         <div class="divsurfer">     
+         <p class="paragrapheDeBienvenue">Découvrez l'essence de la détente et de l'aventure au Rio Way Beach, où chaque vague raconte une histoire de liberté. Notre refuge côtier offre bien plus qu'un simple séjour ; c'est une expérience immersive de sable chaud, de vagues envoûtantes et d'hospitalité chaleureuse. Offrez-vous des journées ensoleillées et des nuits étoilées dans un cadre idyllique, alliant le confort moderne à l'esprit insouciant du bord de mer. Que vous soyez passionné de surf ou à la recherche d'une escapade tranquille, le Rio Way Beach vous invite à créer des souvenirs inoubliables au rythme apaisant de l'océan. Bienvenue dans votre havre de paix balnéaire.</p>
+      <img class="imgsurfer" src="./image/Surfer.png" alt="Petit dessins d'un surfeur">
+      </div>
+   </div>  
+      <div class="surfPresentation">
+         <h2 class="SURF">SURF</h2>
+         <p>Embarquez pour une aventure de surf inoubliable au Rio Way Beach. Nos cours personnalisés vous initient aux vagues, et à proximité, des spots de renommée mondiale offrent des défis aux surfeurs de tous niveaux. Que vous soyez débutant ou expérimenté, plongez dans l'excitation du surf dans ce paradis côtier où la passion de l'océan rencontre une expérience de glisse exceptionnelle.</p>
+         <h2 class="CHILL">CHILL</h2>
+         <p>Le Rio Way Beach va au-delà du surf en offrant un véritable havre de détente. Notre lieu enchanteur est bien plus qu'une destination de surf exceptionnelle, c'est également un paradis pour chill. Imprégnez-vous de la sérénité de nos espaces décontractés, des plages dorées aux jardins paisibles. C'est l'endroit idéal pour se ressourcer, savourer des moments paisibles et créer des souvenirs mémorables dans une ambiance chaleureuse et accueillante.</p>
+      </div>  
+    <div class="deux-images">
+    <img src="/image/couple de surfer.jfif">
+    <img src="/image/femmeSurf.jpeg"></div>
+    
+    </div>
+   
+
+
+               <!----------------------Carousel--------------------------->
+
+<div class="separation"></div>
+
+<div class="bodyPage">
+<h2 class="decouvrer"> HOTEL ET REGION</h2></div>
+
+       <div class="sliderwrapp">
+        <div class="slider">
+           <div class="slides">
+               <!---------------------Radio buttons start------------>
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            
+
+            
+            
+       <!------------------radio buttons end------------->
+       <!------------------slide images start ------------->
+            
+       <div class="slide first">
+           <img src="imageChambre/chambre1.jpeg" alt="Premiere image du slide">
+        </div>
+        <div class="slide">
+           <img src="image/jardinmaison.jpg" alt="Deuxieme image du slide">
+        </div>
+        <div class="slide">
+           <img src="image/petitdejeunecafe.jpeg" alt="Troisieme image du slide">
+        </div>
+        <div class="slide">
+           <img src="image/ama.jpeg" alt="Quatrième  image du slide">
+        </div>
+   
+        
+       <!------------------slide image end------------->
+       <!------------------navigation start------------->
+        
+          <div class="navigation-auto"> 
+           <div class="auto-btn1"></div>
+           <div class="auto-btn2"></div>
+           <div class="auto-btn3"></div>
+           <div class="auto-btn4"></div>
+ 
+          </div>
+         </div>
+       <!------------------automatic navigation end------------->
+       
+         
+       <!------------------manual navigation start------------->
+       
+       
+          <div class="navigation-manual">
+           <label for="radio1" class="manual-btn"></label>
+           <label for="radio2" class="manual-btn"></label>
+           <label for="radio3" class="manual-btn"></label>
+           <label for="radio4" class="manual-btn"></label>
+           
+           
+       
+          </div>
+           </div>
+           
+           <script type="text/javascript">
+           var counter = 1;
+           setInterval(function(){
+               document.getElementById('radio'+ counter).checked = true;
+               counter++;
+               if(counter> 4){
+                   counter=  1;
+               }
+           },3000);
+           </script>
+           </div>
+
+           <div class="separation2">
+
+    <!----------------------Activite et endroits touristiques --------------------------->
+
+<h2 class="decouvrer pbe"> LES PLUS BEAUX ENDROITS</h2>
+<section class="activitewrap"> 
+   <div class="cardwrap">
+      <div class="activiteimgwrap">
+         <a href="lugares.html">
+         <img src="image/imagePremierePage.jpg"></a>
+      </div>
+      <span class="activiteTitle">LES PLUS BELLES PAGES</span>
+   </div>
+      <div class="cardwrap">
+         <a href="lugares.html"></a>
+         <div class="activiteimgwrap"></a>
+            <img src="image/photomoisurf.jpeg"> 
+         </div>
+      <span class="activiteTitle">LES ACTIVITES</span>
+   </div>
+</div>
+</section>
+
+
+
+<h2 class="titrePetitDejeuner"> Un Bon Petit Dejeuner</h2>
+ <div class="presentation">
+   <img class="petitdejimg" src="https://cf2.bstatic.com/xdata/images/hotel/max1024x768/325147197.jpg?k=3ebdf15ad39fd0fc9dc4f5f7bfaf885d20e9f194185b7006024e8c2bf7accf50&o=&hp=1">
+   <div class="divsurfer">     
+   <p class="paragraphepetitdej">Découvrez l'essence de la détente et de l'aventure au Rio Way Beach, où chaque vague raconte une histoire de liberté. Notre refuge côtier offre bien plus qu'un simple séjour ; c'est une expérience immersive de sable chaud, de vagues envoûtantes et d'hospitalité chaleureuse. Offrez-vous des journées ensoleillées et des nuits étoilées dans un cadre idyllique, alliant le confort moderne à l'esprit insouciant du bord de mer. Que vous soyez passionné de surf ou à la recherche d'une escapade tranquille, le Rio Way Beach vous invite à créer des souvenirs inoubliables au rythme apaisant de l'océan. Bienvenue dans votre havre de paix balnéaire.</p>
+     <img class="imgsurfer" src="./image/petitdej.png" alt="Petit dessins d'un surfeur">
+ </div>
+</div> 
+
+
+                  <!----------------------footer--------------------------->
+
+<footer>
+   <div class="contactezNous">
+   <div class="footerLocalisation">
+      <ul>
+      <li><a class="white" href="https://www.google.com/maps/dir//River+Way+Hostel+-+R.+R+Bandeirantes,+18+-+Recreio+dos+Bandeirantes,+Rio+de+Janeiro+-+RJ,+22795-025/@-23.0298707,-43.4763522,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9bc2a4bcedc9b7:0x752a4b351d003dc2!2m2!1d-43.4750746!2d-23.0291726" target="_blank">R. R Bandeirantes, 18 - Recreio dos Bandeirantes,<br> Rio de Janeiro - RJ, 22795-025</a></li>
+      </ul>
+   </div>
+
+</div>
+<div class="icones">
+   <a class="instagram" href="https://www.instagram.com/riowaybeach/?hl=en"target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a>
+   <a class="facebook" href="https://www.facebook.com/riowayhostel/"target="_blank"><i class="fa-brands fa-2x fa-facebook"></i></a>
+   <a href="tel : +55 21 99010-4065"target="_blank"><span class="whatsappBlanc"><i class="fa-brands fa-2x fa-whatsapp"></i></span></a>
+
+ </div>
+   <div class="footerMenu">
+      
+         <ul>
+         <li class="home"><a href="#top">HOME</a></li>
+         <li class="home hebergement"><a href =hebergement.html>HEBERGEMENT</a></li>
+         <li class="home equipe"><a href =equipe.html>EQUIPE</a></li>
+         <li class="home activite"><a href="lugares.html">ACTIVITE</a></li>
+         <li class="home contact"><a href="contact.html">NOUS CONTACTER</A></li>
+         </ul>
+      
+   </div>
+
+</footer>
+</body>
+
+
+
+
